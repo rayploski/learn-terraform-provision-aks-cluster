@@ -2,8 +2,8 @@ resource "random_pet" "prefix" {}
 
 provider "azurerm" {
   features {}
-  subscription_id = "684998db-2846-41d4-969d-415202b26e13"
-  client_id = "f69c65e6-ff7a-4181-b7de-1740f6ffae72"
+  subscription_id = var.subscription_id
+  client_id = var.appId
   client_secret = var.client_secret
   tenant_id = var.tenant_id
   
