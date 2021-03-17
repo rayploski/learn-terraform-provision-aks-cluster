@@ -19,6 +19,18 @@ resource "azurerm_resource_group" "default" {
   }
 }
 
+
+resource "azurerm_resource_group" "tampa" {
+  name     = "${random_pet.prefix.id}-tampa"
+  location = "West US 2"
+
+  tags = {
+    environment = "Demo"
+    message = "Hello Tampa"
+  }
+}
+
+
 resource "azurerm_kubernetes_cluster" "default" {
   name                = "${random_pet.prefix.id}-aks"
   location            = azurerm_resource_group.default.location
