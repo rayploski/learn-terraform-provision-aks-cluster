@@ -2,6 +2,12 @@ resource "random_pet" "prefix" {}
 
 provider "azurerm" {
   features {}
+  subscription_id = "684998db-2846-41d4-969d-415202b26e13"
+  client_id = "f69c65e6-ff7a-4181-b7de-1740f6ffae72"
+  client_secret = var.client_secret
+  tenant_id = "0e3e2e88-8caf-41ca-b4da-e3b33b6c52ec"
+
+  
 }
 
 resource "azurerm_resource_group" "default" {

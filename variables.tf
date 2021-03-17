@@ -5,3 +5,6 @@ variable "appId" {
 variable "password" {
   description = "Azure Kubernetes Service Cluster password"
 }
+
+variable "client_secret" {
+}
