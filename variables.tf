@@ -8,3 +8,5 @@ variable "password" {
 
 variable "client_secret" {
 }
+
+variable "tenant_id" {}
