@@ -15,6 +15,7 @@ resource "azurerm_resource_group" "default" {
 
   tags = {
     environment = "Demo"
+    message = "Hello Tampa"
   }
 }
 
